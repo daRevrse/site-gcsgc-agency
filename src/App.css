@@ -1,38 +1,637 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+/* src/App.css */
+.App-header {
+  background-image: url("../public/Hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-top: 10dvh;
+  padding-bottom: 20dvh;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/* src/components/Header.css */
+.Header {
+  background-color: #00aab3;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+.Header.visible {
+  height: 10dvh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    #000000 80%,
+    #00aab3
+  ); /* Couleur de fond différente lorsque la navbar est visible */
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.Navbar-hero {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 1%;
+  position: absolute;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.halo {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.halo:hover {
+  background-color: #00aab3;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  /*background-color: #0056b3;  Couleur différente au survol */
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 550px;
+  height: 200px;
+  background-image: url("../src/img/logo_nobg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* src/App.css */
+.Services {
+  padding: 40px 20px;
+  text-align: center;
+  background: #000000;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Services h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: 5dvh;
+  margin-right: 5dvh;
+}
+
+.service1 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/web.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service2 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service3 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/site.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.service p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* src/App.css */
+.Portfolio {
+  padding: 40px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolio-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project {
+  max-width: 600px;
+  margin: 0 auto 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  color: #282c34;
+}
+
+.project p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* src/App.css */
+.CTA {
+  background-image: url("../public/cta-bg.jpg");
+  /* background-color: #f8f9fa; */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.CTA h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.CTA p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* src/App.css */
+.Team {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* src/App.css */
+.Process {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.Process h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.process-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Trois colonnes */
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.process1 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/besoins.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process2 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/planif.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process3 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/dev.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process4 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/test.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process5 {
+  width: 150px;
+  height: 100px;
+  background-image: url("../public/livraison.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process-step h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.process-step p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* src/App.css */
+.ContactInfo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.ContactInfo h2 {
+  font-size: 2em;
+  color: #282c34;
+}
+
+.ContactInfo p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* src/App.css */
+.SocialMedia {
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 20px;
+  color: #ffffff;
+  transform: scale(3);
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* src/App.css */
+.Contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.Contact h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.Contact p {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ContactForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ContactForm h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.ContactForm form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+}
+
+.ContactForm label {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: auto;
+  padding: 10px;
+  margin: 0 0 5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.ContactForm button {
+  background-color: #007bff;
   color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.ContactForm button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* src/App.css */
+.Testimonials {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials-container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; */
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Testimonials h2 {
+  font-size: 2em;
+  color: #282c34;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.testimonial .client-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* src/App.css */
+.Footer {
+  background: linear-gradient(#00aab3, #002e60);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    width: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Footer {
+    width: fit-content;
+    justify-content: space-around;
   }
+
+  .Header {
+    padding: 15px;
+  }
+
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-list li {
+    margin-right: 20px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+
+  .service-container {
+    flex-direction: column;
+  }
+
+  .service {
+    margin-bottom: 3dvh;
+  }
+
+  .process-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    display: inline;
+    justify-content: space-around;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Contact .ContactInfo .info .ContactForm h2,
+  h3 {
+    font-size: 0.5em;
+  }
+
+  .ContactInfo p {
+    font-size: 0.6em;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajoutez d'autres règles pour les autres éléments si nécessaire */
 }
