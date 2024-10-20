@@ -16,7 +16,7 @@ function Footer() {
           </div>
         </div>
 
-        <p>&copy; 2024 GSCGS Agency. Tous droits réservés.</p>
+        <p>&copy; 2024 GCSGC Agency. Tous droits réservés.</p>
       </footer>
     </>
   );
