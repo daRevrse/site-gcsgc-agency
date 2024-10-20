@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/site-gcsgc-agency/static/css/main.88a90421.css",
-    "main.js": "/site-gcsgc-agency/static/js/main.eea1f592.js",
+    "main.css": "/site-gcsgc-agency/static/css/main.5e20ab1f.css",
+    "main.js": "/site-gcsgc-agency/static/js/main.df2e6560.js",
     "static/js/787.babab251.chunk.js": "/site-gcsgc-agency/static/js/787.babab251.chunk.js",
+    "static/media/client2.jpg": "/site-gcsgc-agency/static/media/client2.6485dc23cdd7794857c8.jpg",
+    "static/media/client1.jpg": "/site-gcsgc-agency/static/media/client1.ad411396f13feefed1b0.jpg",
     "static/media/Hero-bg.jpg": "/site-gcsgc-agency/static/media/Hero-bg.ce1bc343d487e0d73b1d.jpg",
     "static/media/cta-bg.jpg": "/site-gcsgc-agency/static/media/cta-bg.13b90f1759492830453b.jpg",
+    "static/media/Gradient_2021_11_16_23_10_05_wm.jpg": "/site-gcsgc-agency/static/media/Gradient_2021_11_16_23_10_05_wm.683397d7b0f2a41aa621.jpg",
     "static/media/logo_nobg.png": "/site-gcsgc-agency/static/media/logo_nobg.e952a519a2c82ff4201e.png",
     "static/media/logo500x300-nobg.png": "/site-gcsgc-agency/static/media/logo500x300-nobg.fdc15ff142a91a4e8763.png",
+    "static/media/ftball-removebg-preview.png": "/site-gcsgc-agency/static/media/ftball-removebg-preview.f34917c34c7377892078.png",
     "static/media/logohz.png": "/site-gcsgc-agency/static/media/logohz.7c9ed34caa5b70a4a1db.png",
     "static/media/dev.svg": "/site-gcsgc-agency/static/media/dev.7dc8b4c859d877d79f40.svg",
     "static/media/besoins.svg": "/site-gcsgc-agency/static/media/besoins.c29e4c00c6d9dfbc2d9c.svg",
+    "static/media/2.png": "/site-gcsgc-agency/static/media/2.6f4cb6ac398e53ff5fce.png",
     "static/media/livraison.svg": "/site-gcsgc-agency/static/media/livraison.0311682d529406fb3d65.svg",
     "static/media/planif.svg": "/site-gcsgc-agency/static/media/planif.44292c3392600ffdce3b.svg",
     "static/media/test.svg": "/site-gcsgc-agency/static/media/test.76af19b5d2c8907e6caa.svg",
@@ -17,12 +22,12 @@
     "static/media/site.svg": "/site-gcsgc-agency/static/media/site.86db7e9666ac7c51ecd0.svg",
     "static/media/web.svg": "/site-gcsgc-agency/static/media/web.e1889b7ddae6be103219.svg",
     "index.html": "/site-gcsgc-agency/index.html",
-    "main.88a90421.css.map": "/site-gcsgc-agency/static/css/main.88a90421.css.map",
-    "main.eea1f592.js.map": "/site-gcsgc-agency/static/js/main.eea1f592.js.map",
+    "main.5e20ab1f.css.map": "/site-gcsgc-agency/static/css/main.5e20ab1f.css.map",
+    "main.df2e6560.js.map": "/site-gcsgc-agency/static/js/main.df2e6560.js.map",
     "787.babab251.chunk.js.map": "/site-gcsgc-agency/static/js/787.babab251.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88a90421.css",
-    "static/js/main.eea1f592.js"
+    "static/css/main.5e20ab1f.css",
+    "static/js/main.df2e6560.js"
   ]
 }
