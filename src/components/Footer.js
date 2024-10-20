@@ -11,13 +11,12 @@ function Footer() {
           <div className="contact-container">
             <div className="info">
               <ContactInfo />
-              <SocialMedia />
             </div>
             <ContactForm />
           </div>
         </div>
 
-        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+        <p>&copy; 2024 GSCGS Agency. Tous droits réservés.</p>
       </footer>
     </>
   );

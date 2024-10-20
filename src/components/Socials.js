@@ -7,7 +7,7 @@ import { SlSocialTwitter } from "react-icons/sl";
 const SocialMedia = () => {
   return (
     <div className="SocialMedia">
-      <h2>Suivez-nous sur les Réseaux Sociaux</h2>
+      
       <div className="social-icons">
         <a
           href="lien-de-votre-page-facebook"

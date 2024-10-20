@@ -219,6 +219,12 @@ html {
 .project {
   max-width: 600px;
   margin: 0 auto 30px;
+  border: #000000;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
 }
 
 .project img {
@@ -378,7 +384,7 @@ html {
 /* src/App.css */
 .ContactInfo {
   padding: 40px 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .ContactInfo h2 {
@@ -394,7 +400,7 @@ html {
 /* src/App.css */
 .SocialMedia {
   padding: 10px 5px;
-  text-align: center;
+  text-align: left;
 }
 
 .social-icons {
@@ -403,7 +409,7 @@ html {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: "start";
 }
 
 .social-icons a {
@@ -529,7 +535,7 @@ html {
   color: #007bff;
 }
 
-.info {
+.infos {
   display: flex;
   justify-content: space-around;
   align-items: center;
